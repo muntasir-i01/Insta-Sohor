@@ -77,6 +77,44 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
+
+        <section class="container gap-margin">
+            <h2 class="QA">Q&A Session</h2>
+            <details>
+                <summary>What does JavaScript event loop do?</summary>
+                <p style="color: azure; font-size: large;">The event loop is a queue of callback functions.  Event loop is responsible for executing the code. Async functions like setTimeout and setInterval are pushed onto an queue known as the Event Loop. It is endless loop. The event loop executes tasks starting from the oldest first.</p>
+            </details>
+
+            <details>
+                <summary>Difference between Local Storage and Session Storage?</summary>
+                <table>
+                    <tr>
+                        <th>Local Storage</th>
+                        <th>Session Storage</th>
+                    </tr>
+                    <tr>
+                        <td>Local Storage is accessible from any window on browser.</td>
+                        <td>Session Storage is accessible on same tab on a browser.</td>
+                    </tr>
+                    <tr>
+                        <td>Data on local storage never expires.</td>
+                        <td>Data on session storage expires within tab close.</td>
+                    </tr>
+                    <tr>
+                        <td>Storage Capability 10MB</td>
+                        <td>Storage Capability 5MB</td>
+                    </tr>
+                    <tr>
+                        <td>Due to storing data local storage is less secure to handle sensitive data.</td>
+                        <td>As session storage doesn't store anything it is more secure to use.</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </details>
+        </section>
         <footer></footer>
 
         <!-- add javascript  file  -->

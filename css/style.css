@@ -256,3 +256,40 @@ img {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.gap-margin {
+  margin: 50px;
+}
+
+.QA {
+  background-image: linear-gradient(rgb(115, 115, 121), cyan);
+  padding: 20px;
+  font-weight: 600;
+  color: azure;
+  text-align: center;
+  border-radius: 5px;
+}
+
+details {
+  padding: 20px;
+  background-image: linear-gradient(rgb(115, 115, 121), rgb(159, 202, 202));
+  border-radius: 5px;
+  }
+
+  summary {
+    color: whitesmoke;
+    font-size: larger;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 1px solid white;
+    text-align: center;
+  }
+  table, th, td {
+    border: 1px solid rgb(230, 210, 210);
+    color: whitesmoke;
+}
+th, td {
+    padding: 10px;
+}
