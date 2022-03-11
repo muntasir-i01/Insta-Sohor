@@ -12,8 +12,8 @@ const getReportedPosts = () => {
 };
 
 const isLiked = (id) => {
-    return likedPostsId?.length && !!likedPostsId.includes(id);
-};
+     return likedPostsId?.length && !!likedPostsId.includes(id);
+    };
 
 const addToLiked = (id) => {
     likedPostsId.push(id); 
@@ -40,18 +40,23 @@ const switchTab = (id) => {
         document.getElementById( "posts" ).style.display = "grid";
         document.getElementById( "liked" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
+        
+        document.getElementById("que").style.display= "block";
     } else if (id === "liked") {
         document.getElementById( "liked" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
-
+        
         displayLikedPosts();
+        document.getElementById("que").style.display= "none";
+        
     } else if(id === "reported") {
         document.getElementById( "reported" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "liked" ).style.display = "none";
 
         displayReportedPosts();
+        document.getElementById("que").style.display= "none";
     }
 };
 
@@ -151,7 +156,7 @@ const displayLikedPosts = () => {
     const likedPosts = getLikedPosts();
     likedPosts.forEach((post) => {
         const div = createPost(post);
-        document.getElementById( "liked" ).appendChild(div);
+        document.getElementById( "liked" ).appendChild(div);        
     });
 };
 
@@ -167,6 +172,6 @@ const loadPosts = async () =>{
   let data = await fetch('../data/posts.json');
   posts = await data.json();
   showPosts(posts);
-}
+  }
 
 loadPosts();
