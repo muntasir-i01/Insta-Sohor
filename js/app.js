@@ -4,7 +4,7 @@ const likedPostsId = [];
 const reportedPostsId = [];
 
 const getLikedPosts = () => {
-    return liked.filter((like) => likedPostsId.includes(post.id));
+    return posts.filter((post) => likedPostsId.includes(post.id));
 };
 
 const getReportedPosts = () => {
